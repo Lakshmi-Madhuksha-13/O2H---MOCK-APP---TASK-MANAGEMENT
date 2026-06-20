@@ -1,0 +1,336 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@zenithtasks.com",
+      "password": "Admin@2026",
+      "role": "Admin",
+      "department": "Operations",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=admin",
+      "fixed": true,
+      "bio": "Platform administrator with full system access.",
+      "currentWorkspaceId": 1,
+      "memberships": [
+        {
+          "workspaceId": 1,
+          "role": "Owner"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "jane_doe",
+      "email": "jane@zenithtasks.com",
+      "password": "Dev@2026",
+      "role": "Developer",
+      "department": "Engineering",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=jane",
+      "fixed": true,
+      "bio": "Senior frontend developer specializing in React and design systems.",
+      "currentWorkspaceId": 2,
+      "memberships": [
+        {
+          "workspaceId": 2,
+          "role": "Owner"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "john_smith",
+      "email": "john@zenithtasks.com",
+      "password": "Dev@2026",
+      "role": "Developer",
+      "department": "Engineering",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=john",
+      "fixed": true,
+      "bio": "Backend engineer experienced in Node.js and database architecture.",
+      "currentWorkspaceId": 3,
+      "memberships": [
+        {
+          "workspaceId": 3,
+          "role": "Owner"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "username": "alice",
+      "email": "alice@example.com",
+      "password": "User@2026",
+      "role": "User",
+      "department": "Marketing",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=alice",
+      "fixed": false,
+      "bio": "Team member with task viewing and collaboration access.",
+      "currentWorkspaceId": 4,
+      "memberships": [
+        {
+          "workspaceId": 4,
+          "role": "Owner"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "username": "Dolly",
+      "email": "0313dolly@gmail.com",
+      "password": "Vtu@25666",
+      "role": "User",
+      "department": "General",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=Dolly",
+      "fixed": false,
+      "bio": "",
+      "currentWorkspaceId": 5,
+      "memberships": [
+        {
+          "workspaceId": 5,
+          "role": "Owner"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Implement Glassmorphism Styling System",
+      "description": "Create index.css with HSL design variables and CSS backdrop filters for the main Ocean gradient dashboard.",
+      "priority": "Critical",
+      "status": "In Progress",
+      "category": "Design",
+      "assignee": "jane_doe",
+      "assigneeId": 2,
+      "dueDate": "2026-06-25",
+      "createdBy": "admin",
+      "createdAt": "2026-06-20T12:00:00.000Z",
+      "comments": [
+        {
+          "id": 1,
+          "author": "admin",
+          "text": "High priority — this blocks the entire frontend rollout.",
+          "timestamp": "2026-06-20T12:10:00.000Z"
+        },
+        {
+          "id": 2,
+          "author": "jane_doe",
+          "text": "Checking code compilation and testing comments API.",
+          "timestamp": "2026-06-20T08:11:11.240Z"
+        }
+      ],
+      "workspaceId": 1
+    },
+    {
+      "id": 2,
+      "title": "Set up JSON Persistent Storage",
+      "description": "Implement fs-based local DB controller to persist changes on server restarts.",
+      "priority": "High",
+      "status": "Completed",
+      "category": "Backend",
+      "assignee": "john_smith",
+      "assigneeId": 3,
+      "dueDate": "2026-06-21",
+      "createdBy": "admin",
+      "createdAt": "2026-06-19T10:00:00.000Z",
+      "comments": [],
+      "workspaceId": 1
+    },
+    {
+      "id": 3,
+      "title": "Establish 16-Route Navigation System",
+      "description": "Structure horizontal mega-header navigation with active indicators and responsive layout.",
+      "priority": "Medium",
+      "status": "Todo",
+      "category": "Frontend",
+      "assignee": "jane_doe",
+      "assigneeId": 2,
+      "dueDate": "2026-06-28",
+      "createdBy": "admin",
+      "createdAt": "2026-06-20T09:00:00.000Z",
+      "comments": [],
+      "workspaceId": 1
+    },
+    {
+      "id": 4,
+      "title": "Configure React Router v6 Guard Checks",
+      "description": "Wrap administrative and task tracking views with protection components to ensure role validity.",
+      "priority": "Low",
+      "status": "Backlog",
+      "category": "Frontend",
+      "assignee": "john_smith",
+      "assigneeId": 3,
+      "dueDate": "2026-07-05",
+      "createdBy": "admin",
+      "createdAt": "2026-06-20T10:30:00.000Z",
+      "comments": [],
+      "workspaceId": 1
+    },
+    {
+      "id": 5,
+      "title": "Deploy Production CI/CD Pipeline",
+      "description": "Set up GitHub Actions workflow for automated testing and deployment to staging and production environments.",
+      "priority": "High",
+      "status": "Todo",
+      "category": "Operations",
+      "assignee": "admin",
+      "assigneeId": 1,
+      "dueDate": "2026-07-10",
+      "createdBy": "admin",
+      "createdAt": "2026-06-20T11:00:00.000Z",
+      "comments": [],
+      "workspaceId": 1
+    }
+  ],
+  "logs": [
+    {
+      "id": 1,
+      "timestamp": "2026-06-20T12:05:00.000Z",
+      "username": "admin",
+      "action": "System Initialization",
+      "ipAddress": "127.0.0.1",
+      "details": "Database loaded with default configuration. Admin, Developer accounts are system-fixed."
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-06-20T08:11:11.242Z",
+      "username": "jane_doe",
+      "action": "Task Comment",
+      "ipAddress": "::1",
+      "details": "Added comment on task ID 1"
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-06-20T08:21:24.769Z",
+      "username": "0313dolly@gmail.com",
+      "action": "Login Failure",
+      "ipAddress": "::1",
+      "details": "Invalid credentials provided"
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-06-20T08:21:37.242Z",
+      "username": "john_smith",
+      "action": "Login Success",
+      "ipAddress": "::1",
+      "details": "User [Developer] authenticated successfully"
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-06-20T08:21:47.396Z",
+      "username": "admin",
+      "action": "Login Success",
+      "ipAddress": "::1",
+      "details": "User [Admin] authenticated successfully"
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-06-20T08:22:48.842Z",
+      "username": "0313dolly@gmail.com",
+      "action": "Login Failure",
+      "ipAddress": "::1",
+      "details": "Invalid credentials provided"
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-06-20T08:23:14.233Z",
+      "username": "Dolly",
+      "action": "User Registration",
+      "ipAddress": "::1",
+      "details": "New User account registered in department: General"
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-06-20T08:25:29.746Z",
+      "username": "0313dolly@gmail.com",
+      "action": "Login Failure",
+      "ipAddress": "::1",
+      "details": "Invalid credentials provided"
+    },
+    {
+      "id": 9,
+      "timestamp": "2026-06-20T08:25:42.679Z",
+      "username": "0313dolly@gmail.com",
+      "action": "Login Failure",
+      "ipAddress": "::1",
+      "details": "Invalid credentials provided"
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-06-20T08:25:50.678Z",
+      "username": "Dolly",
+      "action": "Login Success",
+      "ipAddress": "::1",
+      "details": "User [User] authenticated successfully"
+    },
+    {
+      "id": 11,
+      "timestamp": "2026-06-20T08:44:45.625Z",
+      "username": "admin",
+      "action": "Login Success",
+      "ipAddress": "::1",
+      "details": "User [Admin] authenticated successfully"
+    },
+    {
+      "id": 12,
+      "timestamp": "2026-06-20T09:02:56.831Z",
+      "username": "alice",
+      "action": "Login Success",
+      "ipAddress": "::1",
+      "details": "User [User] authenticated successfully"
+    },
+    {
+      "id": 13,
+      "timestamp": "2026-06-20T09:05:11.872Z",
+      "username": "admin",
+      "action": "Login Success",
+      "ipAddress": "::1",
+      "details": "User [Admin] authenticated successfully"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": 1,
+      "name": "Personal Workspace",
+      "type": "Personal",
+      "ownerId": 1,
+      "createdAt": "2026-06-20T08:54:44.261Z"
+    },
+    {
+      "id": 2,
+      "name": "Personal Workspace",
+      "type": "Personal",
+      "ownerId": 2,
+      "createdAt": "2026-06-20T08:54:44.263Z"
+    },
+    {
+      "id": 3,
+      "name": "Personal Workspace",
+      "type": "Personal",
+      "ownerId": 3,
+      "createdAt": "2026-06-20T08:54:44.263Z"
+    },
+    {
+      "id": 4,
+      "name": "Personal Workspace",
+      "type": "Personal",
+      "ownerId": 4,
+      "createdAt": "2026-06-20T08:54:44.263Z"
+    },
+    {
+      "id": 5,
+      "name": "Personal Workspace",
+      "type": "Personal",
+      "ownerId": 5,
+      "createdAt": "2026-06-20T08:54:44.263Z"
+    }
+  ],
+  "projects": [],
+  "teams": [],
+  "sprints": [],
+  "meetings": [],
+  "notes": [],
+  "goals": [],
+  "habits": [],
+  "timeLogs": [],
+  "activityLogs": []
+}
