@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/auth/login",
+      "dest": "/api/auth/login.js"
+    },
+    {
+      "src": "/api/auth/register",
+      "dest": "/api/auth/register.js"
+    },
+    {
+      "src": "/api/tasks/([^/]+)/comments",
+      "dest": "/api/tasks/[id]/comments.js"
+    },
+    {
+      "src": "/api/tasks/([^/]+)",
+      "dest": "/api/tasks/[id].js"
+    },
+    {
+      "src": "/api/tasks",
+      "dest": "/api/tasks/index.js"
+    },
+    {
+      "src": "/api/workspaces/switch",
+      "dest": "/api/workspaces/switch.js"
+    },
+    {
+      "src": "/api/workspaces",
+      "dest": "/api/workspaces/index.js"
+    },
+    {
+      "src": "/api/team",
+      "dest": "/api/team/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/$1"
+    }
+  ]
+}
